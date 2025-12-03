@@ -64,7 +64,7 @@ print(y.head())
 sens_cols = ['SEX', 'EDUCATION', 'MARRIAGE', 'AGE']
 
 # Make a version of df without demographic columns
-df_fair = df.drop(sens_cols,axis=1,inplace=True)
+df_fair = df.drop(sens_cols,axis=1)
 # X_fair is just features without demographics or defult
 X_fair = df_fair.drop(columns=[target])
 # just the target column
